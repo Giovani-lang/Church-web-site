@@ -1,0 +1,38 @@
+.footer {
+    background-color: #242424;
+    color: white;
+    padding: 15px;
+    text-align: center;
+
+
+    .items {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+
+        .item {
+            padding: 50px;
+            text-align: start;
+
+            span {
+                text-transform: uppercase;
+                font-weight: bolder;
+            }
+        }
+
+        li {
+            list-style: none;
+        }
+    }
+
+    @media (max-width: 992px) {
+        .items {
+            display: flex;
+            flex-direction: column
+        }
+    }
+
+    .copyright {
+        font-size: small;
+        font-weight: bolder;
+    }
+}

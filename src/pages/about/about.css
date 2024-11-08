@@ -1,0 +1,141 @@
+.about {
+    font-family: "Circular Std", Sans-serif;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 50vh;
+    position: relative;
+}
+
+.about-imgs {
+    display: flex;
+    width: 100vw;
+    height: 50vh;
+}
+
+.first-img,
+.second-img,
+.third-img {
+    width: 33.33vw;
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: fadeIn 1s forwards;
+    opacity: 0;
+}
+
+.first-img {
+    background-image: url(../../assets/img/couple_pastorale_2.png);
+    animation-delay: 1s;
+}
+
+.second-img {
+    background-image: url(../../assets/img/predication.png);
+    animation-delay: 3s;
+}
+
+.third-img {
+    background-image: url(../../assets/img/media_team.png);
+    animation-delay: 5s;
+}
+
+.about-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    backdrop-filter: brightness(0.5);
+    -webkit-backdrop-filter: brightness(0.5);
+    z-index: 1;
+    font-size: 2vw;
+}
+
+.about-church {
+    display: flex;
+    width: 100vw;
+    height: 50vh;
+    background-color: #ffffff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .pastor-contact {
+        display: flex;
+        justify-content: space-around;
+        width: 50vw;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        display: block;
+    }
+
+    to {
+        opacity: 1;
+        display: block;
+    }
+}
+
+/* Media Query for screens 992px wide or smaller */
+@media (max-width: 992px) {
+    .about-imgs {
+        display: flex;
+        position: relative;
+    }
+
+    .first-img,
+    .second-img,
+    .third-img {
+        position: absolute;
+        width: 100vw;
+        height: 50vh;
+        opacity: 0;
+        animation: slideShow 9s infinite;
+    }
+
+    .first-img {
+        animation-delay: 0s;
+    }
+
+    .second-img {
+        animation-delay: 3s;
+    }
+
+    .third-img {
+        animation-delay: 6s;
+    }
+
+    /* Keyframes for slideshow effect */
+    @keyframes slideShow {
+        0% {
+            opacity: 0;
+        }
+
+        10% {
+            opacity: 1;
+        }
+
+        33.33% {
+            opacity: 1;
+        }
+
+        43.33% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+}

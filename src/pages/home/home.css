@@ -1,0 +1,344 @@
+.principal h1 {
+    font-family: "Edu AU VIC WA NT Guides", cursive;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 100px;
+}
+
+.principal p,
+.fourth p {
+    font-family: "Tangerine", cursive;
+    font-size: 33px;
+}
+
+.fourth h1 {
+    font-family: "Cinzel", serif;
+    font-size: 30px;
+}
+
+.principal {
+    width: 100vw;
+    background-image: url(../../assets/img/Church_inspi.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(7px);
+}
+
+.bleue-line {
+    width: 50%;
+    height: 5%;
+    background-color: #1877F2;
+    transition: transform 10s;
+    animation: instantMoveLeft 3s forwards;
+}
+
+.yellow-line {
+    width: 50%;
+    height: 5%;
+    background-color: yellow;
+    transition: transform 10s;
+    animation: instantMoveRight 3s forwards;
+}
+
+@keyframes instantMoveLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes instantMoveRight {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.principal-text {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(#0a090947, #0a090947, black);
+    backdrop-filter: blur(2px);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+}
+
+.second {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .second-div {
+        margin: 100px;
+    }
+
+    span {
+        text-transform: uppercase;
+        font-weight: bolder;
+    }
+
+    p {
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .icon {
+        width: 5rem;
+        height: 5rem;
+        cursor: pointer;
+        transition: all 1s ease-in-out;
+    }
+}
+
+.third {
+    width: 100vw;
+    height: 30rem;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .discover {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .discover-msg {
+            background-color: #FFF8E7;
+            width: 70%;
+            text-align: start;
+        }
+    }
+
+    .collection {
+        width: 100%;
+        height: 100%;
+
+        .collection-items {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 100%;
+
+            .collection-firstBloc,
+            .collection-secondBloc {
+                width: 70%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            img {
+                background-color: black;
+                padding: 5px;
+                border-radius: 15px;
+                width: 150px;
+                height: 150px;
+            }
+        }
+    }
+
+    .carousel {
+        display: none;
+    }
+}
+
+.fourth {
+    width: 100%;
+    height: auto;
+    background-color: #F1F0F0;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-items: center;
+    justify-content: center;
+}
+
+.fourth-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fourth-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.fifth {
+    width: 100vw;
+    height: auto;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+    .title {
+        width: 50%;
+
+        h1 {
+            font-family: "Circular Std", Sans-serif;
+            letter-spacing: 0;
+            font-weight: 700;
+        }
+    }
+
+    .group {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+
+        .group-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            /* span {
+                width: 200px;
+                height: 200px;
+            } */
+
+            .imgs {
+                object-fit: cover;
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.sixth {
+    width: 100vw;
+    height: auto;
+    background-color: #F1F0F0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .service-time {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        .cards {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .card-line {
+
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .icon {
+                    display: flex;
+                    justify-content: flex-end;
+                    width: 100%;
+                    cursor: pointer;
+                }
+
+                .card-time {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 5px;
+                    border: 1px #242424 solid;
+                    background-color: #242424;
+                    color: white;
+                    border-radius: 15px;
+                    overflow: hidden;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .second {
+        height: auto;
+        flex-direction: column;
+
+        .second-div {
+            margin: 20px;
+        }
+    }
+
+    .third {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+
+        .collection {
+            display: none;
+        }
+
+        .carousel {
+            display: block;
+            width: 50%;
+            overflow: hidden;
+        }
+    }
+
+    .fourth {
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .fourth-intro {
+        text-align: center;
+    }
+
+    .fifth {
+        height: auto;
+
+        .group {
+            flex-direction: column;
+        }
+    }
+
+    .sixth {
+        text-align: center;
+        height: auto;
+
+        .cards {
+            text-align: center;
+
+            .card-line {
+                flex-direction: column;
+            }
+        }
+    }
+}

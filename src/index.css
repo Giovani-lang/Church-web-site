@@ -1,0 +1,28 @@
+:root {
+  width: 100%;
+  height: auto;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: 'Times New Roman', Times, serif;
+
+}
