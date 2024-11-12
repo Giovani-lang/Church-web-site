@@ -1,39 +1,39 @@
 import { NavLink } from 'react-router-dom';
 import './about.css'
 import { PhoneOutlined, WhatsAppOutlined } from '@ant-design/icons';
-import { AntDesignOutlined } from '@ant-design/icons';
-import { Button, ConfigProvider, Space } from 'antd';
+// import { AntDesignOutlined } from '@ant-design/icons';
+// import { Button, ConfigProvider, Space } from 'antd';
 
 
-const useStyle = createStyles(({ prefixCls, css }) => ({
-    linearGradientButton: css`
-      &.${prefixCls}-btn-primary:not([disabled]):not(.${prefixCls}-btn-dangerous) {
-        border-width: 0;
-  
-        > span {
-          position: relative;
-        }
-  
-        &::before {
-          content: '';
-          background: linear-gradient(135deg, #6253e1, #04befe);
-          position: absolute;
-          inset: 0;
-          opacity: 1;
-          transition: all 0.3s;
-          border-radius: inherit;
-        }
-  
-        &:hover::before {
-          opacity: 0;
-        }
-      }
-    `,
-}));
+// const useStyle = createStyles(({ prefixCls, css }) => ({
+//     linearGradientButton: css`
+//       &.${prefixCls}-btn-primary:not([disabled]):not(.${prefixCls}-btn-dangerous) {
+//         border-width: 0;
+
+//         > span {
+//           position: relative;
+//         }
+
+//         &::before {
+//           content: '';
+//           background: linear-gradient(135deg, #6253e1, #04befe);
+//           position: absolute;
+//           inset: 0;
+//           opacity: 1;
+//           transition: all 0.3s;
+//           border-radius: inherit;
+//         }
+
+//         &:hover::before {
+//           opacity: 0;
+//         }
+//       }
+//     `,
+// }));
 
 const about = () => {
 
-    const { styles } = useStyle();
+    // const { styles } = useStyle();
 
     return (
         <div>
@@ -57,7 +57,7 @@ const about = () => {
                 <span className='pastor-contact'>
                     <NavLink to='/'><PhoneOutlined style={{ color: '#000000' }} /> Par téléphone</NavLink>
                     <NavLink to='/'><WhatsAppOutlined style={{ color: '#075e54' }} /> Par Whatsapp</NavLink>
-                    <ConfigProvider
+                    {/* <ConfigProvider
                         button={{
                             className: styles.linearGradientButton,
                         }}
@@ -68,7 +68,7 @@ const about = () => {
                             </Button>
                             <Button size="large">Button</Button>
                         </Space>
-                    </ConfigProvider>
+                    </ConfigProvider> */}
                 </span>
             </div>
         </div>
