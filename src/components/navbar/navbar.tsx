@@ -1,10 +1,16 @@
 import './navbar.css'
 import LOGO from '../../assets/img/logo.png'
 import { Link, NavLink } from 'react-router-dom';
-import { Button, Dropdown, MenuProps } from 'antd';
-import { CloseOutlined, DownOutlined, FileImageOutlined, MenuOutlined, VideoCameraOutlined } from '@ant-design/icons';
+import { Button, Dropdown, MenuProps, Select } from 'antd';
+import { CloseOutlined, DownOutlined, FileImageOutlined, MenuOutlined, TranslationOutlined, VideoCameraOutlined } from '@ant-design/icons';
 import { useState } from 'react';
 
+
+const handleChange = (value: string) => {
+    console.log(`selected ${value}`);
+};
+
+const translateIcon: any = <TranslationOutlined />;
 
 const navbar = () => {
 
@@ -54,6 +60,18 @@ const navbar = () => {
                         </Dropdown>
                     </li>
                     <li className="item"><NavLink to='/about' onClick={!menuOpen}>A propos</NavLink></li>
+                    <li>
+                        <Select
+                            onChange={handleChange}
+                            defaultValue='fr'
+                            suffixIcon={translateIcon}
+                            style={{ width: 60 }}
+                            options={[
+                                { value: 'fr', label: 'FR' },
+                                { value: 'en', label: 'EN' },
+                            ]}
+                        />
+                    </li>
                 </ul>
             </div>
         </div>

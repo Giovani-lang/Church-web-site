@@ -8,6 +8,7 @@ import { EnvironmentOutlined, FacebookFilled, SendOutlined, YoutubeOutlined } fr
 
 const footer = () => {
     const [date] = useState(new Date().getFullYear());
+    const facebookUrl: string = 'https://www.facebook.com/pasteur.kueme';
 
     return (
         <div className='footer'>
@@ -20,7 +21,7 @@ const footer = () => {
                 <div className='item'>
                     <span>Suivez-nous</span>
                     <ul style={{ paddingLeft: '0' }}>
-                        <li><NavLink to='/'><FacebookFilled style={{ color: '#1877F2' }} /> Facebook</NavLink></li>
+                        <li><NavLink to={facebookUrl} target="_blank" rel="noopener noreferrer"><FacebookFilled style={{ color: '#1877F2' }} /> Facebook</NavLink></li>
                         <li><NavLink to='/'><YoutubeOutlined style={{ color: '#FF0000' }} /> Youtube</NavLink></li>
                     </ul>
                 </div>
